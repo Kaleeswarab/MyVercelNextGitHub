@@ -10,7 +10,7 @@ function requestHandler(req, res) {
   if (req.url == "/" && req.method == "GET") {
     res.writeHead(200, { "content-type": "application/json" });
     res.end(
-      JSON.stringify({ message: "Requested message with the server URL" })
+      JSON.stringify({ message: "Requested message with the server URLs" })
     );
     return;
   }
