@@ -1,0 +1,31 @@
+name : Manual_Workflow
+on:
+    workflow_dispatch:
+        inputs:
+            environment:
+                description: 'Select the environment'
+                type: choice
+                required: true
+                options:
+                    - staging
+                    - production 
+            version:
+                description: 'Select the Version'
+                required: false
+                default: latest
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: Deploy
+              run: | 
+                echo 'Installing the required dependencies'
+                echo 'Select the desired options'
+
+
+
+        

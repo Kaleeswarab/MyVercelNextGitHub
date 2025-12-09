@@ -2,7 +2,7 @@ name: CI/CD - Node to Vercel
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "development" ]
 
 jobs:
   build-and-deploy:
