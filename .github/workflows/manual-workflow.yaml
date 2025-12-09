@@ -23,8 +23,8 @@ jobs:
 
             - name: Deploy
               run: | 
-                echo 'Installing the required dependencies'
-                echo 'Select the desired options'
+                echo 'Installing the required dependencies and environment selected : $ {{github.events.inputs.environment}}'
+                echo 'Selected Options : $ {{github.events.inputs.version}} '
 
 
 
